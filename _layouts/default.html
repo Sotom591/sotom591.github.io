@@ -3,6 +3,9 @@
 	<head>
 		<title>{{page.title}}</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+		{% if jekyll.environment == 'production' %}
+		{% include analytics.html %}
+		{% endif %}
 	</head>
 	<body>
 		<nav>
