@@ -1,2 +1,3 @@
 name: Marissa McHugh, Full Stack Developer
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
