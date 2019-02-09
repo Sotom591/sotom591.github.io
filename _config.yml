@@ -15,7 +15,7 @@ links:
   - name: linkedin
     url: https://www.linkedin.com/in/Sotom591
     class: fa-linkedin
-  - name: cv (pdf)
+  - name: resume (pdf)
     id: resume
     type: download
     url: https://sotom591.github.io/assets/resume/Marissa%20McHugh%20Resume.pdf
