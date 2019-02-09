@@ -10,10 +10,11 @@
 	<body>
 		<nav>
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">Resume</a></li>
-        		<li><a href="/blog">Blog</a></li>
+        		<li><a href="#home">Home</a></li>
+	        	<li><a href="#about">About</a></li>
+        		<li><a href="#resume">Resume</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+
     		</ul>
 		</nav>
 		<div class="container">
@@ -21,8 +22,15 @@
 		</div><!-- /.container -->
 		<footer>
     		<ul>
-        		<li><a href="mailto:sotom591@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Sotom59">github.com/Sotom591</a></li>
+					<div class="site-links">
+            <script type="text/javascript">
+              document.write("<n uers=\"{{ site.email.href }}\" bapyvpx=\"_tnd\056chfu(['_genpxRirag', 'yvaxGb', 'rznvy', guvf\056uers]);\"><v pynff=\"sn sn-rairybcr\"><\057v><fcna pynff=\"yvax-grkg\">{{ site.email.title }}<\057fcna><\057n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+            </script>
+            {% for item in site.links %}
+            <a href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', '{% if item.type %}{{ item.type}}{% else %}linkTo{% endif %}', '{% if item.id%}{{ item.id }}{% else %}{{ item.name }}{% endif %}', this.href]);"><i class="fa {{ item.class }}"></i><span class="link-text">{{ item.name }}</span></a>{% endfor %}
+          </div>
+        		<!-- <li><a href="mailto:sotom591@gmail.com">email</a></li>
+        		<li><a href="https://github.com/Sotom59">github.com/Sotom591</a></li> -->
 			</ul>
 		</footer>
 	</body>
