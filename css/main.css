@@ -1,15 +1,15 @@
 
 html {
-  background-color: #EEEBD3
+  background-color: #f5f3e6
 }
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 
 }
 nav ul, footer ul {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -33,13 +33,13 @@ h1 {
 }
 p {
     font-size: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.6em;
     color: #3B8D74;
     text-align: center;
 }
 span{
-  font-size: 1.5em;
-  line-height: 1.4em;
+  font-size: 1.05em;
+  line-height: 1.6em;
   color: #3B8D74;
   text-align: center;
 }
@@ -82,6 +82,11 @@ ul.posts li {
 
 .greeting{
   color: #F7C548;
+  font-size: 1.05em;
+}
+
+.about-me{
+  display: grid;
 }
 
 .portfolio-cont {
