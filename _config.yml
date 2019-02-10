@@ -9,16 +9,16 @@ email:
 links:
   - name: linkedin
     url: https://www.linkedin.com/in/marissa-mchugh/
-    class: fab fa-linkedin
+    class: fab fa-linkedin-in
   - name: twitter
     url: https://twitter.com/Sotom591
     class: fab fa-twitter
   - name: github
     url: https://github.com/Sotom591
-    class: fab fa-github
+    class: fab fa-github-alt
   - name: medium
     url: https://medium.com/@sotom591
-    class: fab fa-medium
+    class: fab fa-medium-m
   - name: resume
     id: resume
     type: download
