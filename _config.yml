@@ -2,21 +2,25 @@ name: Marissa McHugh, Full Stack Developer
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
+email:
+  title: pbagnpg
+  href: "znvygb:Fbgbz591@tznvy.pbz"
+
 links:
-  - name: twitter
-    url: https://twitter.com/Sotom591
-    class: fa-twitter
-  - name: github
-    url: https://github.com/Sotom591
-    class: fa-github
-  - name: blog
-    url: https://medium.com/@sotom591
-    class: fa-medium
   - name: linkedin
     url: https://www.linkedin.com/in/marissa-mchugh/
-    class: fa-linkedin
-  - name: resume (pdf)
+    class: fab fa-linkedin
+  - name: twitter
+    url: https://twitter.com/Sotom591
+    class: fab fa-twitter
+  - name: github
+    url: https://github.com/Sotom591
+    class: fab fa-github
+  - name: medium
+    url: https://medium.com/@sotom591
+    class: fab fa-medium
+  - name: resume
     id: resume
     type: download
     url: https://sotom591.github.io/assets/resume/Marissa%20McHugh%20Resume.pdf
-    class: fa-file-text-o
+    class: fas fa-file-alt
