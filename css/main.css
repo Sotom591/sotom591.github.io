@@ -61,8 +61,8 @@ ul.posts li {
   display: grid;
 
 }
-.MM{
-  justify-self: center;
+.svg{
+  justify-self: end;
   align-self: start;
   grid-column-start: 2;
   grid-column-end: 2;
