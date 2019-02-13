@@ -26,7 +26,7 @@ a {
 
 }
 a:hover {
-    color: #3b8d74
+    color: #3B8D74;
 }
 h1 {
     font-size: 3em;
@@ -137,11 +137,107 @@ ul.posts li {
   grid-column-start:2;
   grid-column-end: 2;
 }
-.portfolio-cont {
+/* .portfolio-cont {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-gap: 1em;
+} */
+
+/* *{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+carousel {
+  background: black;
 }
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: #255957;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #255957;
+}
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+/* buttons, no circle */
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: #255957;
+}
+.flickity-prev-next-button.no-svg {
+  color: #255957;
+}
+/* closer to edge */
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
 
 .project-listing {
   position: relative;
@@ -155,7 +251,7 @@ ul.posts li {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 74, 90, 0.4);
+  background: #f7c54821;
 
 
   /* typographic styles */
@@ -184,14 +280,14 @@ ul.posts li {
 }
 
 /* for touch screen devices */
-@media (hover: none) {
+/* @media (hover: none) {
   .location-title {
     opacity: 1;
   }
   .location-image img {
     filter: blur(2px);
   }
-}
+} */
 
 .link-list{
   display: grid;
