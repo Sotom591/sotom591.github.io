@@ -60,16 +60,27 @@ ul.posts li {
 .blurb{
   display: grid;
   grid-template-columns: 5% auto 5%;
-  grid-template-rows: 200px auto;
+  grid-template-rows: 300px 200px auto;
 }
 
-.blurb-p{
-  justify-self: center;
+.greeting{
+  color: #F7C548;
+  font-size: 8.05em;
+  justify-self: start;
   align-self: top;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 1;
+}
+
+.name{
+  justify-self: center;
+  align-self: top;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .svg-cont{
@@ -98,11 +109,12 @@ ul.posts li {
   margin: 42px;
 }
 
-.greeting{
+
+
+.highlights{
   color: #F7C548;
   font-size: 1.05em;
 }
-
 .about-me{
   display: grid;
   grid-template-columns: 5% auto 5%
