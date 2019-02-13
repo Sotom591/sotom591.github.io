@@ -60,14 +60,14 @@ ul.posts li {
 .blurb{
   display: grid;
   grid-template-columns: 5% auto 5%;
-  grid-template-rows: 300px 200px auto;
+  grid-template-rows: 150px 150px;
 }
 
 .greeting{
   color: #F7C548;
   font-size: 8.05em;
   justify-self: start;
-  align-self: top;
+  align-self: center;
   grid-column-start: 2;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -86,15 +86,16 @@ ul.posts li {
 .svg-cont{
   display: grid;
   grid-template-columns: 5% auto 5%;
+  grid-template-rows: 500px 400px;
 }
 
 .svg{
-  justify-self: end;
-  align-self: center;
+  justify-self: center;
+  align-self: start;
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
   display:block;
   margin:0 auto;
   width: 1000px;
@@ -115,9 +116,11 @@ ul.posts li {
   color: #F7C548;
   font-size: 1.05em;
 }
+
 .about-me{
   display: grid;
-  grid-template-columns: 5% auto 5%
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 600px
 }
 
 .about-p{
@@ -129,18 +132,20 @@ ul.posts li {
 
 .portfolio{
   display: grid;
-  grid-template-columns: 5% auto 5%
+  grid-template-columns: 5% auto 5%;
+  grid-template-rows: 120px
 }
 .portfolio-p{
   justify-self: center;
   align-self: start;
   grid-column-start:2;
   grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 /* .portfolio-cont {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 1em;
+  grid-template-rows: 400px
 } */
 
 /* *{
@@ -149,6 +154,10 @@ ul.posts li {
 } */
 carousel {
   background: black;
+  grid-column-start:2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .carousel-cell {
@@ -188,7 +197,7 @@ carousel {
           filter: none;
 }
 
-/* white circles */
+/* circles */
 .flickity-page-dots .dot {
   width: 12px;
   height: 12px;
@@ -280,25 +289,27 @@ carousel {
 }
 
 /* for touch screen devices */
-/* @media (hover: none) {
+@media (hover: none) {
   .location-title {
     opacity: 1;
   }
   .location-image img {
     filter: blur(2px);
   }
-} */
+}
 
 .link-list{
   display: grid;
+  grid-template-rows: 150px
 }
 .site-links {
   font-size: 22px;
   padding: 30px 0px 0px 6px;
   text-align: center;
-
-  align-self: center;
   justify-self: center;
+  align-self: end;
+  grid-row-start: 1;
+  grid-row-end: 1;
 
 }
 .site-links a {
