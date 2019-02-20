@@ -13,6 +13,7 @@
 	</head>
 	<body>
 		<div class="container">
+			
       {{ content }}
 		</div>
 		<footer>
@@ -26,6 +27,7 @@
             {% for item in site.links %}
             <a class="link-link" href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', '{% if item.type %}{{ item.type}}{% else %}linkTo{% endif %}', '{% if item.id%}{{ item.id }}{% else %}{{ item.name }}{% endif %}', this.href]);"><i class="{{ item.class }}"></i><span class="link-text">{{ item.name }}</span></a>{% endfor %}
           </div>
+					<span class="up-span">back to top <a class="up-link" href="https://sotom591.github.io/#home"><i class="fas fa-arrow-alt-circle-up"></i></a></span>
 			</ul>
 		</footer>
 		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
