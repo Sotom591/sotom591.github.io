@@ -110,8 +110,6 @@ ul.posts li {
   margin: 42px;
 }
 
-
-
 .highlights{
   color: #F7C548;
   font-size: 1.05em;
@@ -135,6 +133,7 @@ ul.posts li {
   grid-template-columns: 5% auto 5%;
   grid-template-rows: 120px
 }
+
 .portfolio-p{
   justify-self: center;
   align-self: start;
@@ -152,6 +151,7 @@ ul.posts li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 } */
+
 carousel {
   background: black;
   grid-column-start:2;
@@ -205,10 +205,12 @@ carousel {
   background: #255957;
   border: 2px solid white;
 }
+
 /* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
   background: #255957;
 }
+
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
     height: 400px;
@@ -228,10 +230,12 @@ carousel {
   background: transparent;
   opacity: 0.6;
 }
+
 .flickity-prev-next-button:hover {
   background: transparent;
   opacity: 1;
 }
+
 /* arrow color */
 .flickity-prev-next-button .arrow {
   fill: #255957;
@@ -239,6 +243,7 @@ carousel {
 .flickity-prev-next-button.no-svg {
   color: #255957;
 }
+
 /* closer to edge */
 .flickity-prev-next-button.previous { left: 0; }
 .flickity-prev-next-button.next { right: 0; }
@@ -246,7 +251,6 @@ carousel {
 .flickity-prev-next-button:disabled {
   display: none;
 }
-
 
 .project-listing {
   position: relative;
@@ -302,6 +306,7 @@ carousel {
   display: grid;
   grid-template-rows: 150px
 }
+
 .site-links {
   font-size: 22px;
   padding: 30px 0px 0px 6px;
@@ -312,6 +317,7 @@ carousel {
   grid-row-end: 1;
 
 }
+
 .site-links a {
   position: relative;
   padding: 0px 14px;
