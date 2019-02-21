@@ -9,7 +9,7 @@
 }
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-	background: url('../assets/images/watercolorslitest.svg') no-repeat center center fixed;
+	background: url('../assets/images/watercolorslitest.svg') no-repeat fixed center;
 }
 
 html {
