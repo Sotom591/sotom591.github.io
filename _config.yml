@@ -26,3 +26,8 @@ links:
     type: download
     url: https://sotom591.github.io/assets/resume/Marissa%20McHugh%20Resume.pdf
     class: fas fa-file-alt
+
+uplink:
+  - name: back to top
+    url: https://sotom591.github.io/#home
+    class: fas fa-arrow-alt-circle-up
