@@ -1,13 +1,6 @@
 ---
 ---
 
-.container{
-  background-image: url('../assets/images/watercolorslitest.svg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 @media only screen and (min-width : 320px) and (max-width : 960px) {
 	background-image: url('../assets/images/watercolorslitest.svg');
   background-repeat: no-repeat;
@@ -16,17 +9,22 @@
 }
 
 html {
-  background-color: #fffffc
+  background-image: url('../assets/images/watercolorslitest.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: 'Archivo', sans-serif;
-
+    font-family: 'Laila', serif;
 
 }
+
 nav ul, footer ul {
-    font-family: 'Archivo', sans-serif;
+  font-family: 'Laila', serif;
+
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -42,9 +40,11 @@ a {
     color: #255957;
 
 }
+
 a:hover {
     color: #3B8D74;
 }
+
 h1 {
     font-size: 3em;
 }
@@ -77,13 +77,15 @@ ul.posts li {
 .blurb{
   display: grid;
   grid-template-columns: 5% auto 5%;
-  grid-template-rows: 150px 150px;
+  grid-template-rows: 95px 100px;
 }
 
 .greeting{
+  font-weight: bold;
   color: #F7C548;
   font-size: 8.05em;
   justify-self: start;
+  margin-left: 50px;
   align-self: center;
   grid-column-start: 2;
   grid-column-end: 2;
@@ -130,12 +132,13 @@ ul.posts li {
 .highlights{
   color: #F7C548;
   font-size: 1.05em;
+  font-weight: bold;
 }
 
 .about-me{
   display: grid;
   grid-template-columns: 5% auto 5%;
-  grid-template-rows: 600px
+  grid-template-rows: 100px 700px
 }
 
 .about-p{
@@ -143,12 +146,14 @@ ul.posts li {
   align-self: start;
   grid-column-start: 2;
   grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2
 }
 
 .portfolio{
   display: grid;
   grid-template-columns: 5% auto 5%;
-  grid-template-rows: 120px
+  grid-template-rows: 75px
 }
 
 .portfolio-p{
@@ -325,7 +330,7 @@ carousel {
 
 .link-list{
   display: grid;
-  grid-template-rows: 150px 50px
+  grid-template-rows: 250px 20px
 }
 
 .site-links {
