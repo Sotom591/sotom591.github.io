@@ -87,13 +87,13 @@ ul.posts li {
   grid-template-rows: 115px 80px;
 }
 
-@media only screen and (min-width : 600px) {
+/* @media only screen and (min-width : 600px) {
 	.blurb{
 	  display: grid;
 	  grid-template-columns: 15% auto 5%;
 	  grid-template-rows: 115px 80px;
 	}
-}
+} */
 
 
 .greeting{
@@ -165,13 +165,13 @@ ul.posts li {
   grid-template-rows: 100px 700px
 }
 
-@media only screen and (min-width : 600px) {
+/* @media only screen and (min-width : 600px) {
 	.about-me{
 	  display: grid;
 	  grid-template-columns: 15% auto 5%;
 	  grid-template-rows: 100px 700px
 	}
-}
+} */
 
 .about-p{
   justify-self: center;
@@ -188,13 +188,13 @@ ul.posts li {
   grid-template-rows: 75px
 }
 
-@media only screen and (min-width : 600px) {
+/* @media only screen and (min-width : 600px) {
 	.portfolio{
 	  display: grid;
 	  grid-template-columns: 15% auto 5%;
 	  grid-template-rows: 75px
 	}
-}
+} */
 
 .portfolio-p{
   justify-self: center;
