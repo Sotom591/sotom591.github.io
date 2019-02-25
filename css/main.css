@@ -1,11 +1,12 @@
 ---
 ---
 
-@media only screen and (min-width : 320px) and (max-width : 960px) {
-	background-image: url('../assets/images/watercolorslitest.svg');
-  background-repeat: no-repeat;
-  background-attatchment: fixed;
-  background-position: center;
+@media only screen and (min-width : 600px) {
+	html{
+		background-image: url('../assets/images/watercolorslitest.svg');
+		background-position: center;
+		background-size: cover;
+	}
 }
 
 html {
@@ -14,12 +15,18 @@ html {
   background-attachment: fixed;
   background-position: center;
 }
+@media only screen and (min-width : 600px) {
+	body {
+
+	    width: 100%;
+	    font-family: 'Laila', serif;
+	}
+}
 
 body {
     margin: 60px auto;
     width: 70%;
     font-family: 'Laila', serif;
-
 }
 
 nav ul, footer ul {
@@ -80,6 +87,15 @@ ul.posts li {
   grid-template-rows: 115px 80px;
 }
 
+@media only screen and (min-width : 600px) {
+	.blurb{
+	  display: grid;
+	  grid-template-columns: 15% auto 5%;
+	  grid-template-rows: 115px 80px;
+	}
+}
+
+
 .greeting{
   font-weight: bold;
   color: #F7C548;
@@ -107,6 +123,14 @@ ul.posts li {
   grid-template-columns: 5% auto 5%;
   grid-template-rows: 500px 400px;
 }
+
+/* @media only screen and (min-width : 600px) {
+	.svg-cont{
+	  display: grid;
+	  grid-template-columns: 15% auto 5%;
+	  grid-template-rows: 500px 300px;
+	}
+} */
 
 .svg{
   justify-self: center;
@@ -141,6 +165,14 @@ ul.posts li {
   grid-template-rows: 100px 700px
 }
 
+@media only screen and (min-width : 600px) {
+	.about-me{
+	  display: grid;
+	  grid-template-columns: 15% auto 5%;
+	  grid-template-rows: 100px 700px
+	}
+}
+
 .about-p{
   justify-self: center;
   align-self: start;
@@ -156,6 +188,14 @@ ul.posts li {
   grid-template-rows: 75px
 }
 
+@media only screen and (min-width : 600px) {
+	.portfolio{
+	  display: grid;
+	  grid-template-columns: 15% auto 5%;
+	  grid-template-rows: 75px
+	}
+}
+
 .portfolio-p{
   justify-self: center;
   align-self: start;
@@ -168,6 +208,8 @@ ul.posts li {
 .portfolio-cont{
   padding: 0px 12px 0px 12px
 }
+
+
 /* .portfolio-cont {
   display: grid;
   grid-template-rows: 400px
