@@ -3,14 +3,33 @@ layout: default
 title: Marissa McHugh, Full Stack Developer
 ---
 <!-- home anchor -->
-<div class="blurb" id="home">
-  <p class="greeting"> Hello! </p>
-  <p class="name"> My name is Marissa McHugh. </p><br/>
-</div>
-<div class="svg-cont">
-  <div class="svg">{% include_relative assets/images/giraffef.svg %}</div>
-</div>
-
+<div class="main-cont">
+  <div class="left">
+    <div class="svg-cont">
+      <div class="svg">{% include_relative assets/images/giraffef.svg %}</div>
+    </div>
+    <ul class="link-list">
+      <div class="site-links">
+        <!-- encoded email linking -->
+        <script type="text/javascript">
+          document.write("<n uers=\"{{ site.email.href }}\" bapyvpx=\"_tnd\056chfu(['_genpxRirag', 'yvaxGb', 'rznvy', guvf\056uers]);\"><v pynff=\"sn sn-rairybcr\"><\057v><fcna pynff=\"yvax-grkg\">{{ site.email.title }}<\057fcna><\057n>".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
+        </script>
+        <!-- icon linking -->
+        {% for item in site.links %}
+        <a class="link-link" href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', '{% if item.type %}{{ item.type}}{% else %}linkTo{% endif %}', '{% if item.id%}{{ item.id }}{% else %}{{ item.name }}{% endif %}', this.href]);"><i class="{{ item.class }}"></i><span class="link-text">{{ item.name }}</span></a>{% endfor %}
+      </div>
+      <!-- <div class="site-up-link">
+        {% for item in site.uplink %}
+        <a class="up-link" href="{{ item.url }}" onclick="_gaq.push(['_trackEvent', '{% if item.type %}{{ item.type}}{% else %}linkTo{% endif %}', '{% if item.id%}{{ item.id }}{% else %}{{ item.name }}{% endif %}', this.href]);"><i class="{{ item.class }}"></i><span class="link-text">{{ item.name }}</span></a>{% endfor %}
+      </div> -->
+    </ul>
+  </div>
 <!-- display about and portfolio sections-->
-{% include_relative about/index.html %}
-{% include_relative portfolio/index.html %}
+  <div class="right">
+    <div class="blurb" id="home">
+      <p class="descript"> Hey! I'm Marissa McHugh. </p><br/>
+    </div>
+    {% include_relative about/index.html %}
+    {% include_relative portfolio/index.html %}
+  </div>
+</div>
